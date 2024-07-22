@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .title {
+            margin: 10px;  
+            padding: 10px;
+            background-color: #04AA6D;
+            color: white;
+            border-radius: 5px;
+            line-height: 10px;
+        }
+
+        .content {
+            display: flex; /* Use Flexbox for layout */
+            padding: 10px;
+        }
+
+        .website_list {
+            list-style-type: none; /* Remove default list styling */
+            padding: 0; /* Remove default padding */
+            margin: 0; /* Remove default margin */
+            width: 200px;
+            border-radius: 5px;
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+        }
+        .website_list li {
+            margin: 3px; /* Space between list items */
+            padding-left: 1%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            background-color: #f1f1f1; /* Background color of each box */
+            font-size: 20px; /* Font size */
+            border-radius: 5px; /* Rounded corners (optional) */
+        }
+
+        .main_text {
+            flex: 1; /* Take up remaining space */
+            padding: 10px;
+        }
+        .main_text h1 {
+            font-size: 35px;
+        }
+        .main_text p {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .side_bar {
+            width: 180px;
+            background-color: #32a4e7;
+            padding: 10px;
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+            line-height: 30px;
+        }
+        .extra{
+            margin-right: 15px;
+            margin-left: 15px;
+            padding: 15px;
+            font-size: 10px;
+            text-align: center;
+            background-color: #d4d4d4;
+            border-radius: 5px;
+
+        }
+    </style>
+    <title>Hamin's Page</title>
+</head>
+<body>
+    <div class='title'>
+        <h1>Welcome to Hamin Song's Homepage</h1>
+        <p>22400386</p>
+    </div>
+    <div class='content'>
+        <ul class='website_list'>
+            <li>Stylesheet 1</li>
+            <li>Stylesheet 2</li>
+            <li>Stylesheet 3</li>
+            <li>blank</li>
+            <li>No Stylesheet</li>
+        </ul>
+        <div class='main_text'>
+            <h1>Same Page Different Stylesheets</h1>
+            <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
+            <br>Stylesheet1, Stylesheet2, Stylesheet3, Stylesheet4.</p>
+            <h2>No Styles</h2>
+            <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
+            <br>No Stylesheet.</p>
+        </div>
+        <div class='side_bar'>
+            <h3>Side-Bar</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        </div>
+    </div>
+    <div class='extra'>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+    </div>
+
+</body>
+</html>
