@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://unpkg.com/typeit@8.3.3/dist/index.umd.js"></script>
+  <style>
+    body{
+      background-color: pink;
+    }
+    #title{
+      text-align: center;
+      font-size: 10vh;
+      margin-top: 45vh;
+      margin-bottom: 45vh;
+      border-radius: 5px;
+    }
+  </style>
+
+</head>
+<body>
+  <p id = "title">웹 겁나 어려워~ 정신 나갈 것 같아~</p>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      new TypeIt('#title')
+        .pause(1000)
+        .delete(19, { delay: 1000 })
+        .type('겁나 재밌어~ 머리가 맑아지는 느낌~')
+        .go();
+    });
+  </script>
+</body>
+</html>
