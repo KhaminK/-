@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- typeIt -->
+    <script src="https://unpkg.com/typeit@8.3.3/dist/index.umd.js"></script>
+    <!-- scroll-out -->
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <link rel="stylesheet" href="Tstyle.css">
+
+</head>
+<body>
+    <div class="page" data-scroll>
+        <h1 id="title">Early Wittgenstein</h1>
+        <h3>1. Picture Theory of Language:</h3>
+        <p>Language functions as a "picture" of reality.
+            Sentences mirror facts, with elements in sentences corresponding to elements in the world.
+            Meaning arises from this correspondence between language and reality.</p>
+        <h3>2. Logical Structure of Language:</h3>
+        <p>Emphasis on logical form as the essence of meaning.
+            Only propositions that can be logically analyzed are meaningful.
+            Nonsense results from attempts to express what cannot be said clearly (i.e., what lies outside the limits of language).</p>
+        <h3>3. Limits of Language:</h3>
+        <p>Philosophy's task is to clarify language to prevent confusion.
+            What can be said at all can be said clearly; whereof one cannot speak, thereof one must be silent.
+            This led to a view that metaphysical, ethical, and aesthetic propositions are not expressible in meaningful language.</p>
+        <h3>4. Atomism and Logical Positivism:</h3>
+        <p>Reality consists of a set of atomic facts, and complex facts are combinations of these.
+            Influenced the logical positivist movement, particularly the Vienna Circle, in advocating that meaningful statements are either empirically verifiable or logically necessary.</p>
+    </div>
+    <div class="page" data-scroll>
+        <h1 id="title">Late Wittgenstein</h1>
+        <h3>1. Critique of the Picture Theory:</h3>
+        <p>Abandoned the idea that language functions as a picture of reality.
+            Introduced the concept of "language games" to illustrate the diverse ways language is used.</p>
+        <h3>2. Language Games:</h3>
+        <p>Language is a social activity with various functions, governed by rules akin to games.
+            Meaning is determined by use within specific contexts and forms of life.
+            There is no single essence of language; rather, its meaning is found in its practical use.</p>
+        <h3>3. Meaning as Use:</h3>
+        <p>The meaning of a word is its use in the language.
+            Context and the way language is practiced in daily life determine meaning.</p>
+        <h3>4. Private Language Argument:</h3>
+        <p>Argued against the possibility of a purely private language, one that is understood by only a single individual.
+            Meaningful language requires a public criterion of correctness, grounded in communal use.</p>
+        <h3>5. Philosophy as Therapy</h3>
+        <p>Philosophy should not aim to solve traditional metaphysical problems but rather to dissolve philosophical confusion.
+            Philosophical problems are often the result of misunderstandings of language.</p>
+        <h3>6. Forms of Life</h3>
+        <p>The concept of "forms of life" highlights that language and meaning are embedded in broader socio-cultural practices.
+            Different "forms of life" entail different ways of using and understanding language.</p>
+
+    </div>
+    </div>
+    <script>
+        ScrollOut({
+            onShown: (element) =>{
+                new TypeIt(element.querySelector('#title'), {
+                speed:30,
+                startDelay:1000,
+            })
+            .go()
+            }
+        })
+    </script>
+</body>
+</html>

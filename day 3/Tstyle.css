@@ -1,0 +1,32 @@
+body{
+    margin:0;
+    padding: 0;
+    background-image: linear-gradient(green, blue);
+}
+
+.page{
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+    line-height: 50px;
+    padding: 10px;
+}
+
+[data-scroll]{
+    transition: all 1s;
+}
+h1{
+    font-size: 5vmin;
+    text-align: center;
+}
+[data-scroll="in"]{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+[data-scroll="out"]{
+    opacity: 0;
+    transform: translateY(200px);
+}

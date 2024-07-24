@@ -1,0 +1,30 @@
+<!-- 참고 https://lottiefiles.com/kr/blog/working-with-lottie-animations/how-to-add-lottie-animation-in-web-page-html -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <dotlottie-player src="https://lottie.host/b319d6a5-58af-4b0b-aac5-840fc557a945/i0QA5jlChg.json" background="#FFFFFF" speed="1" style="width: 1000px; height: 500px" direction="1" playMode="normal" loop controls hover></dotlottie-player>
+    <style>
+        dotlottie-player {
+            /* 툴바 높이 조정 (35px)*/
+            --lottie-player-toolbar-height: 70px;
+            /* 툴바 background color (transparent)*/
+            --lottie-player-toolbar-background-color: pink;
+            /* 툴바 아이콘 색상 조정 (#999) 안바뀜*/
+            --lottie-player-toolbar-icon-color: yellow;
+            /* 아이콘 hover 색상(#222) */
+            --lottie-player-toolbar-icon-hover-color: blue;
+            /* 아이콘 활성 상태 색상 (#555) */
+            --lottie-player-toolbar-icon-active-color: purple;
+            /* 툴바 트랙 색상 (#CCC) 안바뀜*/
+            --lottie-player-seeker-track-color: red;
+            /* 툴바 동그란 위치 좌표 (rgba(0, 107, 120, 0.8)) */
+            --lottie-player-seeker-thumb-color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+</body>
+</html>

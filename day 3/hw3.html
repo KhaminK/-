@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/typeit@8.3.3/dist/index.umd.js"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <link rel="stylesheet" href="hw3.css">
+</head>
+<body>
+    <div class="navigation">
+        <div class="navigation_items">
+            <p>About</p>
+            <p>News</p>
+            <h1>시선</h1>
+            <p>Projects</p>
+            <p>Member</p>
+        </div>
+    </div>
+    <section class="main_page">
+        <div class="animation">
+            <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+            <dotlottie-player src="https://lottie.host/6879a92c-6bae-4124-a97b-8d1190c16391/Eo0TSECqWF.json" background="transparent" speed="1" style="width: 400px; height: 400px" direction="1" playMode="normal" autoplay></dotlottie-player> 
+        </div>
+        <h1 id="title">시선</h1>
+        <h2 id="subtitle">보이지 않는 곳을 찾다</h2>
+    </section>
+    <div class='etc' data-scroll>
+        <h1>Members</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, deleniti magni, laudantium laboriosam modi et id odio minima voluptatum optio ipsa omnis consequatur officia ullam ad est aliquam esse! Maxime.</p>
+
+    </div>
+    <div class='etc2' data-scroll>
+        <h1>Members</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, deleniti magni, laudantium laboriosam modi et id odio minima voluptatum optio ipsa omnis consequatur officia ullam ad est aliquam esse! Maxime.</p>
+    </div>
+    <script>
+        ScrollOut()
+        document.addEventListener('DOMContentLoaded', () => {
+        new TypeIt(('#title'), {
+            speed:10,
+            startDelay:3000,
+        })
+            .go();
+        new TypeIt(('#subtitle'), {
+            startDelay:4000,
+        })
+            .go();
+        });
+    </script>
+</body>
+</html>
